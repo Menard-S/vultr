@@ -2,7 +2,8 @@
 
 require_relative "vultr/version"
 
+#Uses autoload to load only when interacting with client
 module Vultr
-  class Error < StandardError; end
-  # Your code goes here...
+  autoload :Client, "vultr/client"
+  autoload :Client, "vultr/error"
 end

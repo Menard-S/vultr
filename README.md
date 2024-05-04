@@ -18,7 +18,12 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+client = Vultr::Client_new(api_key: ENV["VULTR_API_KEY"])
+client. applications.list
+client.regions.list
+
+instance = client.instances.create({})
+instance.name
 
 ## Development
 
